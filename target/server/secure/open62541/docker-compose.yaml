@@ -1,0 +1,246 @@
+version: '3'
+services:
+    server_0_0:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_0
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.10
+    server_0_1:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_1
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.11
+    server_0_2:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_2
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.12
+    server_0_3:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_3
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.13
+    server_0_4:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_4
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.14
+    server_0_5:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_5
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.15
+    server_0_6:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_6
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.16
+    server_0_7:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_7
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.17
+    server_0_8:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_8
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.18
+    server_0_9:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_9
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.19
+    server_0_10:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_10
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.20
+    server_0_11:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_11
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.21
+    server_0_12:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_12
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.22
+    server_0_13:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_13
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.23
+    server_0_14:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_14
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.24
+    server_0_15:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_15
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.25
+    server_0_16:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_16
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.26
+    server_0_17:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_17
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.27
+    server_0_18:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_18
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.28
+    server_0_19:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_19
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.29
+    server_0_20:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_20
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.30
+    server_0_21:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_21
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.31
+    server_0_22:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_22
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.32
+    server_0_23:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_23
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.33
+    server_0_24:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_24
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.34
+    server_0_25:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_25
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.35
+    server_0_26:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_26
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.36
+    server_0_27:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_27
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.37
+    server_0_28:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_28
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.38
+    server_0_29:
+        image: inferer_open62541:v1.3.2
+        command: "/server/server_ctt selfcertificate/cert_server_ctt.der selfcertificate/key_server_ctt.der --trustlistFolder /crypto/trustedlist"
+        container_name: server_0_29
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.39
+
+networks:
+    inference_network_0:
+        external: true

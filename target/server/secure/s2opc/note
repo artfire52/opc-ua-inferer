@@ -1,0 +1,5 @@
+The toolkit test servers shall pass the UACTT tests. Hence, credentials are
+(ids and passwords can be changed in the UACTT settings/Server Test/Session):
+ - anonymous users
+ - user1:password
+ - user2:password1

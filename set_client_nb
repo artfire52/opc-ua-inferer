@@ -1,0 +1,11 @@
+#!/bin/bash
+if [[ $# -ne 2 ]]; then
+  echo "please mention the number of target (server running simultaneously)"
+  exit 44
+fi
+echo "set $1 target"
+DIR=$(readlink -f ${0%/*})
+cd $DIR
+sed -i -r "s/nb_target=[0-9]+/nb_target=$1/g" learner/OpcUaLeaner.py
+sed -r -i "s/build_docker_compose.py [0-9]+/build_docker_compose.py $1/g" inference.sh
+sed -i -r "s/timeout=[0-9]+/timeout=$2/g" learner/OpcUaLeaner.py

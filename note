@@ -1,0 +1,7 @@
+Pour // les inférences il faut pouvoir contrôler plusieurs
+réseaux dockers. ( refaire inference.py pour refaire autant de réseau que possible).
+Prévoir une exécution parallèle avec des paramètres. 
+Les informations de réseaux sont à donner aux learner en python.
+Pour le mapper les informations de connexion sont passées en paramètre du coup osef.
+
+Pour le mapper les messages pour les sessions (plsu tard)

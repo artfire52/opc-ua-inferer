@@ -1,0 +1,30 @@
+pub(crate) struct AttributeId;
+impl AttributeId{
+    pub(crate) const NODEID:u32 =1;
+	pub(crate) const NODECLASS:u32 =2;
+	pub(crate) const BROWSENAME:u32 =3;
+	pub(crate) const DISPLAYNAME:u32 =4;
+	pub(crate) const DESCRIPTION:u32 =5;
+	pub(crate) const WRITEMASK:u32 =6;
+	pub(crate) const USERWRITEMASK:u32 =7;
+	pub(crate) const ISABSTRACT:u32 =8;
+	pub(crate) const SYMMETRIC:u32 =9;
+	pub(crate) const INVERSENAME:u32 =10;
+	pub(crate) const CONTAINSNOLOOPS:u32 =11;
+	pub(crate) const EVENTNOTIFIER:u32 =12;
+	pub(crate) const VALUE:u32 =13;
+	pub(crate) const DATATYPE:u32 =14;
+	pub(crate) const VALUERANK:u32 =15;
+	pub(crate) const ARRAYDIMENSIONS:u32 =16;
+	pub(crate) const ACCESSLEVEL:u32 =17;
+	pub(crate) const USERACCESSLEVEL:u32 =18;
+	pub(crate) const MINIMUMSAMPLINGINTERVAL:u32 =19;
+	pub(crate) const HISTORIZING:u32 =20;
+	pub(crate) const EXECUTABLE:u32 =21;
+	pub(crate) const USEREXECUTABLE:u32 =22;
+	pub(crate) const DATATYPEDEFINITION:u32 =23;
+	pub(crate) const ROLEPERMISSIONS:u32 =24;
+	pub(crate) const USERROLEPERMISSIONS:u32 =25;
+	pub(crate) const ACCESSRESTRICTIONS:u32 =26;
+	pub(crate) const ACCESSLEVELEX:u32 =27;
+}

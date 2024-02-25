@@ -1,0 +1,38 @@
+version: '3'
+services:
+    server_99_0:
+        image: nuit
+        command: "./toolkit_test_nano_server"
+        container_name: server_99_0
+        restart: always
+        networks:
+            inference_network:
+                ipv4_address: 192.123.99.10
+    server_99_1:
+        image: nuit
+        command: "./toolkit_test_nano_server"
+        container_name: server_99_1
+        restart: always
+        networks:
+            inference_network:
+                ipv4_address: 192.123.99.11
+    server_99_2:
+        image: nuit
+        command: "./toolkit_test_nano_server"
+        container_name: server_99_2
+        restart: always
+        networks:
+            inference_network:
+                ipv4_address: 192.123.99.12
+    server_99_3:
+        image: nuit
+        command: "./toolkit_test_nano_server"
+        container_name: server_99_3
+        restart: always
+        networks:
+            inference_network:
+                ipv4_address: 192.123.99.13
+
+networks:
+    inference_network_99:
+        external: true

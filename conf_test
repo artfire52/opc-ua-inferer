@@ -1,0 +1,11 @@
+Implem: open62541
+Version: v1.3.3
+Vocabulary: hello,open_secure_channel_request,create_session,active_session,open_secure_channel_c_chunk
+NodeId: the.answer
+NodeIdType: NodeIdString
+Namespace: 1
+Value: 43
+ValueType: int32
+NbContainers: 10
+Timeout: 500
+Mode: 3

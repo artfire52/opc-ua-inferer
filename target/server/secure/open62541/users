@@ -1,0 +1,3 @@
+default implementation of user is
+{UA_STRING_STATIC("user1"), UA_STRING_STATIC("password")},
+{UA_STRING_STATIC("user2"), UA_STRING_STATIC("password1")}};

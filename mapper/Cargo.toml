@@ -1,0 +1,39 @@
+[package]
+name = "mapper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "mapper"
+crate-type = ["dylib"]
+
+[dependencies]
+openssl="0.10"
+openssl-sys="*"
+rust-crypto="*"
+nom= "7.1.1"
+arrayref = "0.3.6"
+derive_macro={path="derive_macro"}
+hex = "0.4.3"
+jni="0.20.0"
+
+[dev-dependencies]
+hex = "0.4.3"
+
+[dependencies.cpython]
+version = "0.7"
+features = ["extension-module"]
+
+[dependencies.uuid]
+version = "1.0.0"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]
+
+[features]
+default=["python"]
+python=[]
+java=[]

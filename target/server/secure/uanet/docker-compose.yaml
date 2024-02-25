@@ -1,0 +1,86 @@
+version: '3'
+services:
+    server_0_0:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_0
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.10
+    server_0_1:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_1
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.11
+    server_0_2:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_2
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.12
+    server_0_3:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_3
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.13
+    server_0_4:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_4
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.14
+    server_0_5:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_5
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.15
+    server_0_6:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_6
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.16
+    server_0_7:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_7
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.17
+    server_0_8:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_8
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.18
+    server_0_9:
+        image: inferer_uanet:1.4.367.95
+        command: "dotnet run --project NetCoreConsoleServer.csproj"
+        container_name: server_0_9
+        restart: always
+        networks:
+            inference_network_0:
+                ipv4_address: 192.123.0.19
+
+networks:
+    inference_network_0:
+        external: true

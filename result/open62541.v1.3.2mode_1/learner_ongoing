@@ -1,0 +1,652 @@
+192.123.0.10:4840's certificate received
+192.123.0.11:4840's certificate received
+192.123.0.12:4840's certificate received
+192.123.0.13:4840's certificate received
+192.123.0.14:4840's certificate received
+192.123.0.15:4840's certificate received
+192.123.0.16:4840's certificate received
+192.123.0.17:4840's certificate received
+192.123.0.18:4840's certificate received
+192.123.0.19:4840's certificate received
+192.123.0.20:4840's certificate received
+192.123.0.21:4840's certificate received
+192.123.0.22:4840's certificate received
+192.123.0.23:4840's certificate received
+192.123.0.24:4840's certificate received
+192.123.0.25:4840's certificate received
+192.123.0.26:4840's certificate received
+192.123.0.27:4840's certificate received
+192.123.0.28:4840's certificate received
+192.123.0.29:4840's certificate received
+192.123.0.30:4840's certificate received
+192.123.0.31:4840's certificate received
+192.123.0.32:4840's certificate received
+192.123.0.33:4840's certificate received
+192.123.0.34:4840's certificate received
+192.123.0.35:4840's certificate received
+192.123.0.36:4840's certificate received
+192.123.0.37:4840's certificate received
+192.123.0.38:4840's certificate received
+192.123.0.39:4840's certificate received
+13 Letter
+[Letter('hello'), Letter('open_secure_channel_request'), Letter('get_endpoint_request'), Letter('close_secure_channel_request'), Letter('create_session'), Letter('close_session'), Letter('active_session'), Letter('active_session_wrong_user'), Letter('active_session_cert_wrong'), Letter('read_req'), Letter('nullsize'), Letter('open_secure_channel_c_chunk'), Letter('active_session_anon')]
+##
+    ['hello'] --> ['Ack,']
+##
+    ['open_secure_channel_request'] --> ['Err,Eof,']
+##
+    ['get_endpoint_request'] --> ['Err,Eof,']
+##
+    ['close_secure_channel_request'] --> ['Err,Eof,']
+##
+    ['create_session'] --> ['Err,Eof,']
+##
+    ['close_session'] --> ['Err,Eof,']
+##
+    ['active_session'] --> ['Err,Eof,']
+##
+    ['active_session_wrong_user'] --> ['Err,Eof,']
+##
+    ['active_session_cert_wrong'] --> ['Err,Eof,']
+##
+    ['read_req'] --> ['Err,Eof,']
+##
+    ['nullsize'] --> ['Err,Eof,']
+##
+    ['open_secure_channel_c_chunk'] --> ['Err,Eof,']
+##
+    ['active_session_anon'] --> ['Err,Eof,']
+##
+    ['hello', 'hello'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,']
+##
+    ['hello', 'get_endpoint_request'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'close_secure_channel_request'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'create_session'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'close_session'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'active_session'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'active_session_wrong_user'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'active_session_cert_wrong'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'read_req'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'nullsize'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_c_chunk'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'active_session_anon'] --> ['Ack,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'hello'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'close_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_wrong_user', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_cert_wrong', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'read_req', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'hello'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'active_session_anon', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'get_endpoint_request', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'create_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'close_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'CloSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_wrong_user', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_cert_wrong', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'read_req', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'hello'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'create_session', 'active_session_anon', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'CreSesResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'hello'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'get_endpoint_request', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'GepResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'CloSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'create_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'CreSesResOK,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'close_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'hello'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'open_secure_channel_c_chunk'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session', 'active_session_anon'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'hello'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'open_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'get_endpoint_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'GepResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'close_secure_channel_request'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Eof,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'create_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'CreSesResOK,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'close_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'active_session'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'active_session_wrong_user'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'active_session_cert_wrong'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'read_req'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Service_fault,']
+##
+    ['hello', 'open_secure_channel_request', 'get_endpoint_request', 'active_session_wrong_user', 'nullsize'] --> ['Ack,', 'OpnRepOK,', 'GepResOK,', 'Service_fault,', 'Err,Eof,']
