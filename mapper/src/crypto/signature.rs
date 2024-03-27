@@ -1,8 +1,8 @@
 use crate::crypto::encryption::RsaPadding;
 
 use super::pkey::{PrivateKey, PublicKey};
-use crypto::mac::Mac;
-use crypto::poly1305::Poly1305;
+// use crypto::mac::Mac;
+// use crypto::poly1305::Poly1305;
 use openssl::hash::MessageDigest;
 use openssl::pkey::PKey;
 use openssl::sign::{self, RsaPssSaltlen};
@@ -21,7 +21,7 @@ pub enum SymmetricSignatureAlgorithm {
     HmacSha1,
     HmacSha256,
     HmacSha384,
-    Poly1305,
+    // Poly1305,
 }
 
 
@@ -75,11 +75,11 @@ impl SymmetricSigner {
                 signer.update(data).unwrap();
                 signer.sign_to_vec().unwrap()
             }
-            SymmetricSignatureAlgorithm::Poly1305 => {
-                let mut poly = Poly1305::new(&self.key);
-                poly.input(data);
-                poly.result().code().to_vec()
-            }
+            // SymmetricSignatureAlgorithm::Poly1305 => {
+            //     let mut poly = Poly1305::new(&self.key);
+            //     poly.input(data);
+            //     poly.result().code().to_vec()
+            // }
         }
     }
 
@@ -105,12 +105,12 @@ impl SymmetricSigner {
                 let hmac = signer.sign_to_vec().unwrap();
                 openssl::memcmp::eq(&hmac, &signature)
             }
-            SymmetricSignatureAlgorithm::Poly1305 => {
-                let mut poly = Poly1305::new(&self.key);
-                poly.input(data);
-                let hmac = poly.result().code().to_vec();
-                openssl::memcmp::eq(&hmac, &signature)
-            }
+            // SymmetricSignatureAlgorithm::Poly1305 => {
+            //     let mut poly = Poly1305::new(&self.key);
+            //     poly.input(data);
+            //     let hmac = poly.result().code().to_vec();
+            //     openssl::memcmp::eq(&hmac, &signature)
+            // }
         }
     }
     ///hardcoded value of signature size. It is usefull since Poly1305 use a different API.
@@ -119,7 +119,7 @@ impl SymmetricSigner {
             SymmetricSignatureAlgorithm::HmacSha1 => 20,
             SymmetricSignatureAlgorithm::HmacSha256 => 32,
             SymmetricSignatureAlgorithm::HmacSha384 => 48,
-            SymmetricSignatureAlgorithm::Poly1305 => 20,
+            // SymmetricSignatureAlgorithm::Poly1305 => 20,
         }
     }
 }
