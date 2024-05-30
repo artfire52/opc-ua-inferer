@@ -4,6 +4,10 @@ This project uses active automata learning with OPC UA implementations:
 - [Open62541](https://github.com/open62541/open62541)
 - [opcua-asyncio](https://github.com/FreeOpcUa/opcua-asyncio)
 - [UANET](https://github.com/OPCFoundation/UA-.NETStandard)
+
+## Python version
+The mapper is using cpython (version = "0.7") crate. So please use python version below 3.11
+
 ## Run active automata learning
 
 ```
@@ -55,12 +59,17 @@ This folder contains the learner of the MAT framework.
 It is based on [pylstar](https://github.com/gbossert/pylstar).
 
 ## Mapper
-This folder contains the mapper for the inference. It transcript abstract strings such as "hello" to OPC UA binary message.
+This folder contains the mapper for the inference. It transcript abstract strings such as "hello" to OPC UA binary message. A better version of the code will be released in another repository.
 
 ## Publication
 
-This repository will be published to a public repository on github.com.
-
-Nevertheless, the released edition will constitute an improved version featuring more refined code.
+This repository is related to the publication
+```
+Mealy Verifier: An Automated, Exhaustive, and Explainable
+Methodology for Analyzing State Machines in Protocol
+Implementations
+doi: 10.1145/3664476.3664506
+published in: The 19th International Conference on Availability, Reliability and Security (ARES 2024), July 30-August 2, 2024, Vienna, Austria
+```
 
 
