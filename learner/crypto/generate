@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ "$#" -ne 4 ]; then
+    echo "generate name uri dns ip"
+    exit
+fi
+
+openssl genrsa -out key_"$1".pem  4096 
+openssl req -x509 -key key_"$1".pem -out cert_"$1".pem -days 312  \
+    -addext "subjectAltName = URI:$2,DNS:$3,IP:$4"\
+    -addext "keyUsage=digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment, keyAgreement, keyCertSign"\
+    -addext "extendedKeyUsage = serverAuth, clientAuth"
+
+openssl x509 -in cert_"$1".pem -out cert_"$1".der -outform DER
+openssl rsa -in key_"$1".pem -out key_"$1".der -outform DER

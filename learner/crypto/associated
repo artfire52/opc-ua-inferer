@@ -1,0 +1,21 @@
+#!/bin/bash
+if [ $# -ne 2 ];then
+  echo "usage: $0 certificate key"
+  echo "verify if the key match the cetificate"
+fi
+if echo "$1" | grep "pem"  >/dev/null;then 
+  CERT=$(openssl x509 -noout -modulus -in "$1" -inform pem |openssl md5)
+else
+  CERT=$(openssl x509 -noout -modulus -in "$1" -inform der 2> /dev/null |openssl md5 )
+fi
+if echo "$2" | grep "pem"  >/dev/null ;then 
+  KEY=$(openssl rsa -noout -modulus -in "$2" -inform pem |openssl md5)
+else
+  KEY=$(openssl rsa -noout -modulus -in "$2" -inform der  |openssl md5 )
+fi
+echo $CERT $KEY
+if [ "$CERT" = "$KEY" ];then
+  echo "match !"
+else
+  echo "no match!"
+fi
